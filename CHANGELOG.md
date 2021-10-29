@@ -15,6 +15,7 @@
 
 ### Chore
 - [#4998](https://github.com/blockscout/blockscout/pull/4998) - API endpoints logger
+- [#4861](https://github.com/blockscout/blockscout/pull/4861) - Add separate column for token icons
 
 
 ## 4.0.0-beta
