@@ -1112,7 +1112,7 @@ msgstr ""
 #: lib/block_scout_web/templates/layout/app.html.eex:45 lib/block_scout_web/templates/transaction/_pending_tile.html.eex:20
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:37 lib/block_scout_web/templates/transaction/overview.html.eex:411
 #: lib/block_scout_web/views/wei_helpers.ex:78
-msgid "Ether"
+msgid "Vid"
 msgstr ""
 
 #, elixir-format
@@ -3265,4 +3265,9 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_modal_delegators_list.html.eex:18
 msgid "validator"
+msgstr ""
+
+#, elixir-format
+#: lib/block_scout_web/templates/layout/_topnav.html.eex:116
+msgid "Workers"
 msgstr ""
