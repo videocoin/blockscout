@@ -108,7 +108,7 @@
           <% end %>
         <% end %>
         <li class="nav-item">
-          <a href="https://workers.dev.videocoin.network/workers" role="button" id="navbarWorkersBtn" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" target="_blank">
+          <a href="https://workers.dev.videocoin.network/workers" role="button" id="navbarWorkersBtn" class="nav-link topnav-nav-link" aria-haspopup="false" aria-expanded="false" target="_blank">
             <span class="nav-link-icon">
               <%= render BlockScoutWeb.IconsView, "_active_icon.html" %>
             </span>
