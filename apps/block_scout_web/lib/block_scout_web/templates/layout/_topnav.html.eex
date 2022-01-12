@@ -1,3 +1,4 @@
+<% workers_page_url = Application.get_env(:block_scout_web, :workers_page_url) %>
 <nav class="navbar navbar-dark navbar-expand-lg navbar-primary" data-selector="navbar" id="top-navbar">
   <div class="container-fluid navbar-container">
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
@@ -53,14 +54,16 @@
             </div>
           </li>
         <% end %>
-        <li class="nav-item">
-          <a href="https://workers.dev.videocoin.network/workers" role="button" id="navbarWorkersBtn" class="nav-link topnav-nav-link" aria-haspopup="false" aria-expanded="false" target="_blank">
-            <span class="nav-link-icon">
-              <%= render BlockScoutWeb.IconsView, "_active_icon.html" %>
-            </span>
-            <%= gettext("Workers") %>
-          </a>
-        </li>
+        <%= if workers_page_url do %>
+          <li class="nav-item">
+            <a href=<%= workers_page_url %> role="button" id="navbarWorkersBtn" class="nav-link topnav-nav-link" aria-haspopup="false" aria-expanded="false" target="_blank">
+              <span class="nav-link-icon">
+                <%= render BlockScoutWeb.IconsView, "_active_icon.html" %>
+              </span>
+              <%= gettext("Workers") %>
+            </a>
+          </li>
+        <% end %>
       </ul>
       <button class="dark-mode-changer" id="dark-mode-changer">
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16">
