@@ -56,6 +56,23 @@
         </div>
       </div>
     </div>
+
+    <div class="card-section col-md-12 col-lg-5 pl-0-md js-ad-dependant-mb-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="erc721-media" >
+            <%= if media_type(media_src(@token_instance.instance)) == "video" do %>
+              <video autoplay style="width: 100%;">
+                <source src=<%= media_src(@token_instance.instance) %> type="video/mp4">
+              </video>
+            <% else %>
+              <img src=<%= media_src(@token_instance.instance) %> />
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-counters.js") %>"></script>
 </section>
