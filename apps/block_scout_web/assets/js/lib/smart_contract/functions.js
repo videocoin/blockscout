@@ -83,7 +83,7 @@ const readWriteFunction = (element) => {
       walletEnabled()
         .then((isWalletEnabled) => queryMethod(isWalletEnabled, url, $methodId, args, type, functionName, $responseContainer))
     } else if (action === 'write') {
-      const explorerChainId = $form.data('chainId')
+      const explorerChainId = 1 /*$form.data('chainId')*/
       walletEnabled()
         .then((isWalletEnabled) => callMethod(isWalletEnabled, $functionInputs, explorerChainId, $form, functionName, $element))
     }

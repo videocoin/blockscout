@@ -4,9 +4,9 @@ import WalletConnectProvider from '@walletconnect/web3-provider'
 import { compareChainIDs, formatError, showConnectElements, showConnectedToElements } from './common_helpers'
 import { openWarningModal } from '../modals'
 
-const instanceChainId = process.env.CHAIN_ID ? parseInt(`${process.env.CHAIN_ID}`, 10) : 1
+const instanceChainId = 1
 const walletConnectOptions = { rpc: {}, chainId: instanceChainId }
-walletConnectOptions.rpc[instanceChainId] = process.env.JSON_RPC ? process.env.JSON_RPC : 'https://videocoin.network/rpc'
+walletConnectOptions.rpc[instanceChainId] = 'https://videocoin.network/rpc'
 
 // Chosen wallet provider given by the dialog window
 let provider
